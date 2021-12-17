@@ -1,7 +1,9 @@
 import UIKit
 
 public final class Event: EventDescriptor {
-  public var description: String?
+  public var startDate = Date() //added
+  public var endDate = Date() //added
+  public var description: String? //added
   public var dateInterval = DateInterval()
   public var isAllDay = false
   public var text = ""
