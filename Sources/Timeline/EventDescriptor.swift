@@ -2,6 +2,8 @@ import Foundation
 import UIKit
 
 public protocol EventDescriptor: AnyObject {
+  var startDate: Date {get set} //added
+  var endDate: Date {get set} //added
   var description: String? {get set} //added
   var dateInterval: DateInterval {get set}
   var isAllDay: Bool {get}
